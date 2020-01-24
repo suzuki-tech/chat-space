@@ -1,21 +1,19 @@
 * {
   box-sizing: border-box;
 }
-
-.wrapper{
+.wrapper{ // このwrapperの意義
   display: flex;
   height: 100vh;
 }
 
 .side-bar{
-    display: flex;
+    width: 300px;
     height: 100%;
     background-color: #2f3e51;
     &__header {
-      width: 300px;
       background-color: #253141;
       height: 100px;
-      display: flex;
+      display: flex; // 直下の子要素を横並びにする
       align-items: center;
       padding-left: 20px;
       padding-right: 20px;
@@ -45,8 +43,21 @@
         }
       }
     }
-    .side-bar__group{
-      &__list
+    &__group{
+      height: calc(100vh - 100px);
+      &__box{
+        font-weight: bold;
+        h1{
+          color: #ffffff;
+          font-size: 15px;
+          padding: 20px 20px 5px 20px;
+        }
+        p{
+          color: #ffffff;
+          font-size: 11px;
+          padding: 0px 20px 40px 20px;
+        }
+      }
     }
   }
   
@@ -66,7 +77,6 @@
       &__message-form{
         background-color: #d2d2d2;
         height: 90px;
-        // position:(absolute, n,n,n,0);
         
       }
     }
