@@ -1,5 +1,14 @@
-.main
-  .chat-main
-    .chat-main__group-info
-    .chat-main__message-list
-    .chat-main__message-form
+.chat-main
+  .chat-main__header
+    .chat-main__header__left-box
+      %h2.chat-main__header__left-box__current-group
+        test
+      %ul.chat-main__header__left-box__member
+        Member:
+        %li.chat-main__header__left-box__member__list
+          sample
+    .chat-main__header__edit-group
+      = link_to "#" do
+        Edit
+  .chat-main__message-list
+  .chat-main__message-form

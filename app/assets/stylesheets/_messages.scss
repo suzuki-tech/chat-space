@@ -60,24 +60,59 @@
       }
     }
   }
-  
-.main{
-    .chat-main {
+
+  .chat-main {
       width: calc(100vw - 300px);
       background-color: #fafafa;
-      height: 100%;    
-      &__group-info{
+      &__header{
         background-color: #ffffff;
         height: 100px;
         border-bottom: 1px solid #eeeeee;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+        
+        &__left-box{
+          margin-top: 35px;
+          font-weight: normal;
+          &__current-group{
+            color: #333333;
+            font-size: 20px;
+            margin-bottom: 15px;
+          }
+          &__member{
+            display: flex;
+            font-size: 12px;
+            color: #999999;
+            ul{
+              list-style: none;
+            }
+            &__list{
+              li{
+              }
+            }
+          }
+        }
+        &__edit-group{
+          padding: 0 20px;
+          height: 40px;
+          line-height: 40px;
+          margin-top: 28px;
+          border: 1px solid #38aef0;
+          a{
+            color: #38aef0;
+            text-decoration: none;
+          }
+        }
       }
+
       &__message-list{
         height: calc(100vh - 190px);
       }
+
       &__message-form{
         background-color: #d2d2d2;
         height: 90px;
         
       }
     }
-  }
