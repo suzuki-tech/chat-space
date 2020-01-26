@@ -1,4 +1,6 @@
+@import "./config/colors";
 @import "./reset";
-@import "./messages";
+@import "./modules/chat-main";
+@import "./modules/side-bar";
 @import "font-awesome-sprockets";
 @import "./font-awesome";

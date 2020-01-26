@@ -1,0 +1,57 @@
+.side-bar{
+  width: 300px;
+  height: 100%;
+  background-color: $side_blue_light;
+  &__header {
+    background-color: $side_blue_dark;
+    height: 100px;
+    display: flex; // 直下の子要素を横並びにする
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &__box{
+      height: 20px;
+      width: 260px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold; //太線
+      
+      &__user-name{
+        color: $white;
+        line-height: 20px; //上下中央
+
+      }
+      &__menu{
+        width: 60px;
+        display: flex;
+        justify-content: flex-end;
+        li{
+          margin-left: 5px;
+        }
+        a{
+          color: $white;
+        }
+      }
+    }
+  }
+  &__group{
+    height: calc(100vh - 100px);
+    &__box{
+      font-weight: bold;
+      h1{
+        font-size: 15px;
+        padding: 20px 20px 5px 20px;
+      }
+      a{
+        color: $white;
+        text-decoration: none;
+      }
+      p{
+        color: $white;
+        font-size: 11px;
+        padding: 0px 20px 40px 20px;
+      }
+    }
+  }
+}
