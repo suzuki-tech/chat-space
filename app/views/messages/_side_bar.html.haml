@@ -1,0 +1,32 @@
+.side-bar
+  .side-bar__header
+    .side-bar__header__box
+      %p.side-bar__header__box__user-name
+        test
+      %ul.side-bar__header__box__menu
+        %li.side-bar__header__box__new-group
+          =link_to "#" do
+            =icon('fas','edit')
+        %li.side-bar__header__box__edit-user
+          =link_to "#" do
+            =icon('fa', 'cog')
+
+  .side-bar__group
+    .side-bar__group__box
+      %h1.side-bar__group__box__name
+        =link_to "#" do
+          group1
+      %p.side-bar__group__box__notice
+        まだメッセージがありません
+    .side-bar__group__box
+      %h1.side-bar__group__box__name
+        =link_to "#" do
+          group1
+      %p.side-bar__group__box__notice
+        まだメッセージがありません
+    .side-bar__group__box
+      %h1.side-bar__group__box__name
+        =link_to "#" do
+          group1
+      %p.side-bar__group__box__notice
+        まだメッセージがありません

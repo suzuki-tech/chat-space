@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+.wrapper{ // このwrapperの意義
+  display: flex;
+  height: 100vh;
+}
+
+
+
+  .chat-main {
+      width: calc(100vw - 300px);
+      background-color: #fafafa;
+      &__header{
+        background-color: $white;
+        height: 100px;
+        border-bottom: 1px solid #eeeeee;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+        
+        &__left-box{
+          margin-top: 35px;
+          font-weight: normal;
+          &__current-group{
+            color: #333333;
+            font-size: 20px;
+            margin-bottom: 15px;
+          }
+          &__member{
+            display: flex;
+            font-size: 12px;
+            color: #999999;
+            ul{
+              list-style: none;
+            }
+            &__list{
+              li{
+              }
+            }
+          }
+        }
+        &__edit-group{
+          padding: 0 20px;
+          height: 40px;
+          line-height: 40px;
+          margin-top: 28px;
+          border: 1px solid $light_blue;
+          a{
+            color: $light_blue;
+            text-decoration: none;
+          }
+        }
+      }
+
+      &__message{
+        height: calc(100vh - 190px);
+        padding: 35px 40px;
+        &__list{
+          padding-bottom: 46px;
+          &__upper-info{
+            display: flex;
+            margin-bottom: 12px;
+            &__talker{
+              font-size: 16px;
+              font-weight: bold;
+              p{
+                color: #333333;
+              }
+            }
+            &__date{
+              margin-left: 10px;
+              font-size: 12px;
+              color: #999999;
+            }
+          }
+          &__text{
+            color: #434A54;
+            font-size: 14px;
+          }
+        }
+      }
+
+      &__message-form{
+        background-color: #d2d2d2;
+        height: 90px;
+        padding: 20px 40px;
+          form{
+            display: flex;
+            .input-box{
+              display: flex;
+              position: relative;
+              width: 100%;
+              &__text{
+                height: 50px;
+                width: 100%;
+                padding: 0 40px 0 10px;
+              }
+              &__image{
+                cursor: pointer;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 1.3rem;
+                &__file{
+                  display: none;
+                }
+              }
+            }
+            .submit-btn{
+              background-color: $light_blue;
+              color: $white;
+              cursor: pointer;
+              margin-left: 15px;
+              padding: 0 30px;
+            }
+          }
+      }
+      }
