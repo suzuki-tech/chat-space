@@ -39,10 +39,8 @@
     height: calc(100vh - 100px);
     &__box{
       font-weight: bold;
-      h1{
-        font-size: 15px;
-        padding: 20px 20px 5px 20px;
-      }
+      font-size: 15px;
+      padding: 20px 20px 5px 20px;
       a{
         color: $white;
         text-decoration: none;
