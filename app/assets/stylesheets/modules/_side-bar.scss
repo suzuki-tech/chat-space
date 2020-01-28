@@ -39,15 +39,13 @@
     height: calc(100vh - 100px);
     &__box{
       font-weight: bold;
-      h1{
-        font-size: 15px;
-        padding: 20px 20px 5px 20px;
-      }
+      font-size: 15px;
+      padding: 20px 20px 5px 20px;
       a{
         color: $white;
         text-decoration: none;
       }
-      p{
+      &__notice{
         color: $white;
         font-size: 11px;
         padding: 0px 20px 40px 20px;
