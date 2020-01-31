@@ -56,9 +56,9 @@ $(function(){
       .done(function(data){
         var html = buildHTML(data);
         $('.chat-main__messages').append(html);
+        $('.chat-main__messages').animate({ scrollTop: $('.chat-main__messages')[0].scrollHeight});
         $('form')[0].reset();
-        
-        console.log(data);
+        $('.form__submit').prop('disabled', false )
       })
   });
 });
