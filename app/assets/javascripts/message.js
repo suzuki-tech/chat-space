@@ -55,7 +55,10 @@ $(function(){
     })
       .done(function(data){
         var html = buildHTML(data);
-        console.log(data)
+        $('.chat-main__messages').append(html);
+        $('form')[0].reset();
+        
+        console.log(data);
       })
   });
 });
