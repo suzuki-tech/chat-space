@@ -37,6 +37,7 @@
   }
   &__group{
     height: calc(100vh - 100px);
+    overflow: scroll;
     &__box{
       font-weight: bold;
       font-size: 15px;
